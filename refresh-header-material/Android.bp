@@ -1,0 +1,20 @@
+android_library {
+    name: "libRefreshHeaderMaterial",
+    srcs: [
+        "src/main/java/**/*.java"
+    ],
+    resource_dirs: [
+        "src/main/res",
+    ],
+    manifest: "src/main/AndroidManifest.xml",
+    libs: [],
+    static_libs: [
+        "androidx.annotation_annotation",
+        "androidx.core_core",
+        "androidx.legacy_legacy-support-core-ui",
+        "androidx.appcompat_appcompat",
+        "androidx.recyclerview_recyclerview",
+        "libRefreshKernel",
+    ],
+    sdk_version: "current",
+}
